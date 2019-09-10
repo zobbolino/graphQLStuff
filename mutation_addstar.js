@@ -1,0 +1,12 @@
+mutation{
+  addStar(input:{starrableId:"MDEwOlJlcG9zaXRvcnkyMDU4NjY3ODc="}){
+    starrable{
+      stargazers(first:8){
+        nodes{
+          name
+          login
+        }
+      }
+    }
+  }
+}
